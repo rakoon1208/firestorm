@@ -1,7 +1,7 @@
     // Start Generation Here
     -- Ammo Bar UI Creation
     local function createAmmoBarUI(player)
-        
+
     local ReplicatedStorage = game:GetService("ReplicatedStorage")
     local Players = game:GetService("Players")
     local player = Players.LocalPlayer
@@ -33,7 +33,7 @@
     -- Connect to ammo update event
     local ammoUpdateEvent = ReplicatedStorage:WaitForChild("AmmoUpdate") -- Replace with actual event name
     ammoUpdateEvent.OnClientEvent:Connect(function(currentAmmo, maxAmmo)
-        updateAmmoBar(curre ntAmmo, maxAmmo)
+        updateAmmoBar(currentAmmo, maxAmmo)
     end)
     
     local Players = game:GetService("Players")
